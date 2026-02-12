@@ -1,0 +1,56 @@
+/* ===== Main Header ===== */
+.header {
+  position: fixed;   /* always top */
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 80px;
+  background-color: #ffffff;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Active Link */
+.nav-links a.active {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 4px;
+}
+
+/* Page spacing so content not hide under fixed header */
+.page-container {
+  padding: 120px 80px 60px;
+}
